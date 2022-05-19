@@ -117,7 +117,7 @@ namespace Hotel.WebApi.core.Services
             }
             user.Active = 0;
             user.IdentifyCode = RandomString(6);
-            var res = _userRepository.Insert(user);
+            var res = _userRepository.Register(user);
             SendCode(user);
             return res == 1;
         }
