@@ -18,7 +18,7 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"SELECT * FROM User WHERE UserName = @UserName";
+            string sqlCommand = $"SELECT * FROM User WHERE Username = @UserName";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
             dynamicParam.Add($"@UserName", userName);
@@ -32,7 +32,7 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"SELECT * FROM User WHERE UserName = @UserName & Active='1'";
+            string sqlCommand = $"SELECT * FROM User WHERE Username = @Username & Active='1'";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
             dynamicParam.Add($"@UserName", userName);
@@ -47,10 +47,10 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"Update User set Code = '', Active='1' WHERE UserName = @UserName";
+            string sqlCommand = $"Update User set Code = '', Active='1' WHERE Username = @Username";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
-            dynamicParam.Add($"@UserName", user.Username);
+            dynamicParam.Add($"@Username", user.Username);
             //dữ liệu trả về thông tin của đối tượng
             var data = sqlConnection.Execute(sql: sqlCommand, param: dynamicParam);
             //trả về kết quả
