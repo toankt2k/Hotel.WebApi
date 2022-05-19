@@ -13,5 +13,6 @@ namespace Hotel.WebApi.core.Interfaces
         public int Login(User user);
         public int Register(User user);
         public User GetByUserName(string userName);
+        public int Identify(User user);
     }
 }

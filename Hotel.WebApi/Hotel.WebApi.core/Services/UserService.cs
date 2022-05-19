@@ -40,7 +40,7 @@ namespace Hotel.WebApi.core.Services
                 throw new CustomException("Không tìm thấy đôi tượng cần sửa", errorMsg);
             }
             //nếu không đúng với mã xác nhận thì lỗi 
-            if (oldEntity.Code != user.Code)
+            if (oldEntity.IdentifyCode != user.IdentifyCode)
             {
                 errorMsg.Add($"NotIdentify", "Mã xác nhận không hợp lệ, vui lòng kiểm tra lại");
                 throw new CustomException("Mã xác thực không đúng", errorMsg);
@@ -66,9 +66,9 @@ namespace Hotel.WebApi.core.Services
                 }
             }
             user.Active = 1;
-            user.Code = "";
+            user.IdentifyCode = "";
             // gọi update đến repository
-            var result = _userRepository.Update(user);
+            var result = _userRepository.Identify(user);
             return result == 1;
         }
 
@@ -81,7 +81,7 @@ namespace Hotel.WebApi.core.Services
                 errorMsg.Add("NotFound", "Người dùng không tồn tại!");
                 throw new CustomException("xác thực thất bại", errorMsg);
             }
-            if(userOld.Code != user.Code)
+            if(userOld.IdentifyCode != user.IdentifyCode)
             {
                 errorMsg.Add("CodeError", "Mã xác thực không đúng");
                 throw new CustomException("xác thực thất bại", errorMsg);
@@ -105,7 +105,7 @@ namespace Hotel.WebApi.core.Services
                 throw new CustomException("Đăng ký không thành công, tài khoản đã tồn tại", errorMsg);
             }
             user.Active = 0;
-            user.Code = RandomString(6);
+            user.IdentifyCode = RandomString(6);
             var res = SendCode(user);
             _userRepository.Insert(user);
             return true;
@@ -129,7 +129,7 @@ namespace Hotel.WebApi.core.Services
             "<p>Thông tin tài khoản như sau:</p>" +
             $"<p>Tài khoản: {user.Username}</p>" +
             $"<p>Mật khẩu: {user.Password}</p>" +
-            $"<p>Mã xác nhân: {user.Code} Vui lòng xác nhận để kích hoạt tài khoản</p>";
+            $"<p>Mã xác nhân: {user.IdentifyCode} Vui lòng xác nhận để kích hoạt tài khoản</p>";
 
             message.BodyEncoding = System.Text.Encoding.UTF8;
             message.SubjectEncoding = System.Text.Encoding.UTF8;

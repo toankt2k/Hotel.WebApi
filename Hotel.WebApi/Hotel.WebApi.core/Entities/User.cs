@@ -15,8 +15,10 @@ namespace Hotel.WebApi.core.Entities
         public string? FullName { get; set; }
         public string? Position { get; set; }
         public string? Email { get; set; }
+        [NotMap]
         public int? Active { get; set; }
-        public string? Code { get; set; }
+        [NotMap]
+        public string? IdentifyCode { get; set; }
 
     }
 }

@@ -28,6 +28,21 @@ namespace Infrastructure.Respository
             return data;
         }
 
+        public int Identify(User user)
+        {
+            //khởi tạo kết nối
+            var sqlConnection = new MySqlConnection(_sqlConnectionString);
+            //lấy dữ liệu
+            string sqlCommand = $"Update User set Code='', Active='1' WHERE UserName = @UserName";
+            //khởi tạo tham số
+            var dynamicParam = new DynamicParameters();
+            dynamicParam.Add($"@UserName", user.Username);
+            //dữ liệu trả về thông tin của đối tượng
+            var data = sqlConnection.Execute(sql: sqlCommand, param: dynamicParam);
+            //trả về kết quả
+            return data;
+        }
+
         public int Login(User user)
         {
             throw new NotImplementedException();
@@ -37,5 +52,6 @@ namespace Infrastructure.Respository
         {
             throw new NotImplementedException();
         }
+
     }
 }
