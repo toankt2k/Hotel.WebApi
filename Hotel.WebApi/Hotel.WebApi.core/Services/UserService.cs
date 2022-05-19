@@ -79,12 +79,13 @@ namespace Hotel.WebApi.core.Services
         public User Login(User user)
         {
             Dictionary<string, string> errorMsg = new Dictionary<string, string>();
-            //var emptyCheck = ValidateEmpty(user);
-            //if (emptyCheck.Count > 0)
-            //{
-            //    throw new CustomException("Đăng nhập thất bại", emptyCheck);
-            //}
-            var userOld = _userRepository.CheckUsername(user.Username);
+            
+            if (string.IsNullOrEmpty(user.Username))
+            {
+                errorMsg.Add("NotFound", "Tài khoản không được trống");
+                throw new CustomException("Đăng nhập thất bại", errorMsg);
+            }
+            var userOld = _userRepository.Login(user);
             if(userOld == null)
             {
                 errorMsg.Add("NotFound", "Tài khoản hoặc mật khẩu không tồn tại!");

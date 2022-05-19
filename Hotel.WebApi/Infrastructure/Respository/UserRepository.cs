@@ -58,9 +58,20 @@ namespace Infrastructure.Respository
             return data;
         }
 
-        public int Login(User user)
+        public User Login(User user)
         {
-            throw new NotImplementedException();
+            //khởi tạo kết nối
+            var sqlConnection = new MySqlConnection(_sqlConnectionString);
+            //lấy dữ liệu
+            string sqlCommand = $"SELECT * FROM User WHERE Username = @Username and Active = '1' and Password=@Password";
+            //khởi tạo tham số
+            var dynamicParam = new DynamicParameters();
+            dynamicParam.Add($"@Username", user.Username);
+            dynamicParam.Add($"@Password", user.Password);
+            //dữ liệu trả về thông tin của đối tượng
+            var data = sqlConnection.Query<User>(sql: sqlCommand, param: dynamicParam).FirstOrDefault();
+            //trả về kết quả
+            return data;
         }
 
         public int Register(User user)

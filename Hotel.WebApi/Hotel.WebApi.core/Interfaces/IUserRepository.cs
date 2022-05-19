@@ -10,7 +10,7 @@ namespace Hotel.WebApi.core.Interfaces
 {
     public interface IUserRepository:IBaseRepository<User>
     {
-        public int Login(User user);
+        public User Login(User user);
         public int Register(User user);
         public User GetByUserName(string userName);
         public User CheckUsername(string userName);
