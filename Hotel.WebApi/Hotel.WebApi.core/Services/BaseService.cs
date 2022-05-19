@@ -56,7 +56,6 @@ namespace MISA.Web02.Core.Services
         /// Author: Nguyễn Đức Toán-MF1095 (13/04/2022)
         public virtual int InsertService(T entity)
         {
-            var entityName = typeof(T).Name;
             //validate dữ liệu
             Dictionary<string, string> errorMsg = new Dictionary<string, string>();
             //validate dữ liệu trống
@@ -64,15 +63,6 @@ namespace MISA.Web02.Core.Services
             if (validateEmptyResult.Count() > 0)
             {
                 throw new CustomException("Dữ liệu không hợp lệ", errorMsg);
-            }
-            //lấy code của entity truyền vào
-            var code = typeof(T).GetProperty($"{entityName}Code").GetValue(entity).ToString();
-            //kiểm tra mã code trùng
-            var data = _baseRepository.FindByCode(code);
-            //nếu có bản ghi trùng với mã hiện tại
-            if (data != null)
-            {
-                errorMsg.Add($"{entityName}Code", "Mã bị trùng");
             }
             if (errorMsg.Count() > 0)//nếu danh sách lỗi có lỗi thì throw exception
             {
@@ -100,7 +90,6 @@ namespace MISA.Web02.Core.Services
                 throw new CustomException("Dữ liệu không hợp lệ", errorMsg);
             }
             //lấy code của entity truyền vào
-            var newCode = typeof(T).GetProperty($"{entityName}Code").GetValue(entity).ToString();
             //lấy giá trị cũ trong data base
             var oldEntity = _baseRepository.GetById(id);
             //nếu không tìm thấy bản ghi / bản ghi đã bị xóa trước khi sửa 
@@ -108,18 +97,6 @@ namespace MISA.Web02.Core.Services
             {
                 errorMsg.Add($"{entityName}NotFound", "Không tìm thấy đối tượng");
                 throw new CustomException("Không tìm thấy đôi tượng cần sửa", errorMsg);
-            }
-            else
-            {
-                //lấy mã code của đối tượng đã có trong database
-                var oldCode = typeof(T).GetProperty($"{entityName}Code").GetValue(oldEntity).ToString();
-                if (oldCode == newCode)//nếu bằng mã mới có nghĩa mã code đã tồn tại
-                {
-                    //thêm 1 lỗi vào danh sách lỗi
-                    errorMsg.Add($"{entityName}Code", "Mã Bị trùng");
-                    //throw exception
-                    throw new CustomException("Dữ liệu không hợp lệ", errorMsg);
-                }
             }
             if (errorMsg.Count() > 0)
             {

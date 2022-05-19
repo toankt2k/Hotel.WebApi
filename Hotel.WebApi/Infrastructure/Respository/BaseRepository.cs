@@ -118,8 +118,8 @@ namespace MISA.Infrastructure.Respository
         /// <summary>
         /// cập nhật thông tin nhân viên
         /// </summary>
-        /// <param name="employee"></param>
-        /// <param name="employeeId"></param>
+        /// <param name=""></param>
+        /// <param name=""></param>
         /// <returns>số hàng bị ảnh hưởng</returns>
         /// Author: Nguyễn Đức Toán-MF1095 (13/04/2022)
         public virtual int Update(T entity)
