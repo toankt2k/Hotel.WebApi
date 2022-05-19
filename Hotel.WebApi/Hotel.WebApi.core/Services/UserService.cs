@@ -124,7 +124,7 @@ namespace Hotel.WebApi.core.Services
         private async static Task<object> SendCode(User user)
         {
             String to = user.Email;
-            String from = "toankt2k@gmail.com";
+            String from = "nguoilanhdao2@gmail.com";
             MailMessage message = new MailMessage(from, to);
             message.Subject = "Mã xác thực tài khoản";
             message.Body = $"<p>Kính chào: {user.FullName}!</p>" +
@@ -145,7 +145,7 @@ namespace Hotel.WebApi.core.Services
             using (SmtpClient client = new SmtpClient("smtp.gmail.com"))
             {
                 client.Port = 587;
-                client.Credentials = new NetworkCredential(from, "0973590850");
+                client.Credentials = new NetworkCredential(from, "0945881345tam");
                 client.EnableSsl = true;
                 return await SendMail(from, to, message.Subject, message.Body, client);
             }
