@@ -14,7 +14,6 @@ D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\bin\Deb
 D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\bin\Debug\net6.0\Hotel.WebApi.core.dll
 D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\bin\Debug\net6.0\ref\Hotel.WebApi.core.dll
 D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\bin\Debug\net6.0\Hotel.WebApi.core.pdb
-D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.csproj.AssemblyReference.cache
 D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.GeneratedMSBuildEditorConfig.editorconfig
 D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.AssemblyInfoInputs.cache
 D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.AssemblyInfo.cs

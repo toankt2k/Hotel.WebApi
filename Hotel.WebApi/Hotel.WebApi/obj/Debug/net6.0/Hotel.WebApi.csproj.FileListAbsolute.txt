@@ -72,3 +72,10 @@ D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\ne
 D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\ref\Hotel.WebApi.dll
 D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.pdb
 D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.genruntimeconfig.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

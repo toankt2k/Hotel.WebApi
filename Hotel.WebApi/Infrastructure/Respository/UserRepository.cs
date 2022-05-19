@@ -35,7 +35,7 @@ namespace Infrastructure.Respository
             string sqlCommand = $"SELECT * FROM User WHERE Username = @Username & Active='1'";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
-            dynamicParam.Add($"@UserName", userName);
+            dynamicParam.Add($"@Username", userName);
             //dữ liệu trả về thông tin của đối tượng
             var data = sqlConnection.Query<User>(sql: sqlCommand, param: dynamicParam).FirstOrDefault();
             //trả về kết quả
