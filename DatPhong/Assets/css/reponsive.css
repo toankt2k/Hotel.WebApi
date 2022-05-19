@@ -1,0 +1,122 @@
+﻿
+@media(max-width:1500px){
+    .form__import-item{
+        flex-wrap:wrap;
+        
+    }
+    .form__import-label{
+        width:100%;
+        margin-bottom: 0.5rem;
+    }
+    .form__import-select {
+        width: 100%;
+    }
+}
+@media(max-width:1023px) {
+    .sidebar-2 {
+        display: none;
+    }
+
+    .topbar .navbar-search {
+        display: none !important;
+    }
+
+    .topbar #sidebarToggleTop {
+        display: flex;
+    }
+
+    .container-content {
+        min-height: calc(100vh - var(--top-bar__height));
+        width: 100%;
+    }
+
+    .logo {
+        flex: 1;
+    }
+    .wrapper {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .form__pc{
+        margin-top:0;
+    }
+    .wrapper__custom-height-mobile{
+        align-items:center;
+    }
+    .border-left{
+        display:none;
+    }
+    .DataMedicalRecord::-webkit-scrollbar{
+        display:none;
+    }
+    ::-webkit-scrollbar {
+        display:none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #C2C3C9;
+        border-radius: 10px;
+    }
+}
+@media(max-width:739px){
+    .btn-container{
+        flex-wrap:wrap;
+        margin-bottom:0;
+    }
+    .btn-submit {
+        width: 100%;
+        margin-left:0;
+        margin-bottom:20px;
+        min-height:60px;
+    }
+
+    /* Tim kiem */
+    .search__container {
+        flex-wrap:wrap;
+    }
+
+    .search__input {
+        width: 100%;
+        min-height: 60px;
+        margin-right:0;
+        margin-bottom:30px;
+    }
+    .container__page-content{
+        padding:0;
+    }
+    .name__page{
+        flex-direction:column;
+    }
+    .name__page-tilte{
+        justify-content:center;
+        text-align:center;
+    }
+    .name__page-tilte-button{
+        margin-bottom:20px
+    }
+
+    .chart-setting{
+        width: 450px;
+    }
+    .card-body{
+        height: unset;
+        min-height:100px;
+    }
+}
+@media(max-width:539px){
+    
+    .container__form {
+        height:100vh;
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+    }
+    .module_name{
+        justify-content:center;
+    }
+    .chart-setting{
+        width: 300px;
+    }
+}
+
