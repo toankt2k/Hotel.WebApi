@@ -72,9 +72,21 @@ namespace Hotel.WebApi.core.Services
             return result == 1;
         }
 
-        public void Login(User user)
+        public User Login(User user)
         {
-
+            Dictionary<string, string> errorMsg = new Dictionary<string, string>();
+            var userOld = _userRepository.GetByUserName(user.Username);
+            if(userOld == null)
+            {
+                errorMsg.Add("NotFound", "Người dùng không tồn tại!");
+                throw new CustomException("xác thực thất bại", errorMsg);
+            }
+            if(userOld.Code != user.Code)
+            {
+                errorMsg.Add("CodeError", "Mã xác thực không đúng");
+                throw new CustomException("xác thực thất bại", errorMsg);
+            }
+            return userOld;
         }
 
         public bool RegisterAsync(User user)
@@ -84,15 +96,12 @@ namespace Hotel.WebApi.core.Services
             var validateEmptyResult = ValidateEmpty(user);
             if (validateEmptyResult.Count() > 0)
             {
-                throw new CustomException("Dữ liệu không hợp lệ", errorMsg);
-            }
-            if (errorMsg.Count() > 0)//nếu danh sách lỗi có lỗi thì throw exception
-            {
-                throw new CustomException("Dữ liệu không hợp lệ", errorMsg);
+                throw new CustomException("Dữ liệu không hợp lệ", validateEmptyResult);
             }
             var oldUser = _userRepository.GetByUserName(user.Username);
             if (oldUser != null)//nếu danh sách lỗi có lỗi thì throw exception
             {
+                errorMsg.Add("Duplicate", "Người dùng đã tồn tại!");
                 throw new CustomException("Đăng ký không thành công, tài khoản đã tồn tại", errorMsg);
             }
             user.Active = 0;
@@ -114,13 +123,13 @@ namespace Hotel.WebApi.core.Services
             String from = "toankt2k@gmail.com";
             MailMessage message = new MailMessage(from, to);
             message.Subject = "Mã xác thực tài khoản";
-            message.Body = $"Kính chào: {user.FullName}!\n" +
-            "TENTEN chân thành cảm ơn Quý khách đã tin tưởng và đăng ký sử dụng dịch vụ của chúng tôi.\n" +
-            "Hệ thống đã tiếp nhận yêu cầu đăng ký cho Tài khoản quản lý tên miền từ quý khách.\n" +
-            "Thông tin tài khoản như sau:\n" +
-            $"Tài khoản: {user.Username}\n" +
-            $"Mật khẩu: {user.Password}\n" +
-            $"Mã xác nhân: {user.Code} Vui lòng xác nhận để kích hoạt tài khoản";
+            message.Body = $"<p>Kính chào: {user.FullName}!</p>" +
+            "<p>TENTEN chân thành cảm ơn Quý khách đã tin tưởng và đăng ký sử dụng dịch vụ của chúng tôi.</p>" +
+            "<p>Hệ thống đã tiếp nhận yêu cầu đăng ký cho Tài khoản quản lý tên miền từ quý khách.</p>" +
+            "<p>Thông tin tài khoản như sau:</p>" +
+            $"<p>Tài khoản: {user.Username}</p>" +
+            $"<p>Mật khẩu: {user.Password}</p>" +
+            $"<p>Mã xác nhân: {user.Code} Vui lòng xác nhận để kích hoạt tài khoản</p>";
 
             message.BodyEncoding = System.Text.Encoding.UTF8;
             message.SubjectEncoding = System.Text.Encoding.UTF8;

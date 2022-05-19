@@ -10,7 +10,7 @@ namespace Hotel.WebApi.core.Interfaces
 {
     public interface IUserService:IBaseService<User>
     {
-        public void Login(User user);
+        public User Login(User user);
         public bool RegisterAsync(User user);
         public bool Identify(User user);
 
