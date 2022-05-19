@@ -98,8 +98,8 @@ namespace Hotel.WebApi.core.Services
             {
                 throw new CustomException("Dữ liệu không hợp lệ", validateEmptyResult);
             }
-            var oldUser = _userRepository.GetByUserName(user.Username);
-            if (oldUser != null)//nếu danh sách lỗi có lỗi thì throw exception
+            var oldUser = _userRepository.CheckUsername(user.Username);
+            if (oldUser != null )//nếu danh sách lỗi có lỗi thì throw exception
             {
                 errorMsg.Add("Duplicate", "Người dùng đã tồn tại!");
                 throw new CustomException("Đăng ký không thành công, tài khoản đã tồn tại", errorMsg);

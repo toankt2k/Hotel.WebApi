@@ -27,13 +27,27 @@ namespace Infrastructure.Respository
             //trả về kết quả
             return data;
         }
+        public User CheckUsername(string userName)
+        {
+            //khởi tạo kết nối
+            var sqlConnection = new MySqlConnection(_sqlConnectionString);
+            //lấy dữ liệu
+            string sqlCommand = $"SELECT * FROM User WHERE UserName = @UserName & Active='1'";
+            //khởi tạo tham số
+            var dynamicParam = new DynamicParameters();
+            dynamicParam.Add($"@UserName", userName);
+            //dữ liệu trả về thông tin của đối tượng
+            var data = sqlConnection.Query<User>(sql: sqlCommand, param: dynamicParam).FirstOrDefault();
+            //trả về kết quả
+            return data;
+        }
 
         public int Identify(User user)
         {
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"Update User set Code='', Active='1' WHERE UserName = @UserName";
+            string sqlCommand = $"Update User set Code = '', Active='1' WHERE UserName = @UserName";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
             dynamicParam.Add($"@UserName", user.Username);
