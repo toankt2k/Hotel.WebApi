@@ -10,10 +10,12 @@ namespace Hotel.WebApi.core.Entities
     public class User
     {
         public Guid? UserId { get; set; }
+        [Required(Msg = "Tài khoản")]
         public string? Username { get; set; }
         public string? Password { get; set; }
         public string? FullName { get; set; }
         public string? Position { get; set; }
+        [Required(Msg = "Email")]
         public string? Email { get; set; }
         [NotMap]
         public int? Active { get; set; }

@@ -25,9 +25,10 @@ namespace Hotel.WebApi.core.Services
         {
             Dictionary<string, string> errorMsg = new Dictionary<string, string>();
             //validate dữ liệu trống
-            var validateEmptyResult = ValidateEmpty(user);
-            if (validateEmptyResult.Count() > 0)//nếu dữ liệu bị trống
+            var validateEmptyResult = user.Username;
+            if (string.IsNullOrEmpty(validateEmptyResult))//nếu dữ liệu bị trống
             {
+                errorMsg.Add("Empty", "Tài khoản bị trống");
                 throw new CustomException("Dữ liệu không hợp lệ", errorMsg);
             }
             //lấy code của entity truyền vào
@@ -75,16 +76,16 @@ namespace Hotel.WebApi.core.Services
         public User Login(User user)
         {
             Dictionary<string, string> errorMsg = new Dictionary<string, string>();
-            var userOld = _userRepository.GetByUserName(user.Username);
+            var emptyCheck = ValidateEmpty(user);
+            if (emptyCheck.Count > 0)
+            {
+                throw new CustomException("Đăng nhập thất bại", emptyCheck);
+            }
+            var userOld = _userRepository.CheckUsername(user.Username);
             if(userOld == null)
             {
-                errorMsg.Add("NotFound", "Người dùng không tồn tại!");
-                throw new CustomException("xác thực thất bại", errorMsg);
-            }
-            if(userOld.IdentifyCode != user.IdentifyCode)
-            {
-                errorMsg.Add("CodeError", "Mã xác thực không đúng");
-                throw new CustomException("xác thực thất bại", errorMsg);
+                errorMsg.Add("NotFound", "Tài khoản hoặc mật khẩu không tồn tại!");
+                throw new CustomException("Đăng nhập thất bại", errorMsg);
             }
             return userOld;
         }
@@ -106,9 +107,9 @@ namespace Hotel.WebApi.core.Services
             }
             user.Active = 0;
             user.IdentifyCode = RandomString(6);
-            var res = SendCode(user);
-            _userRepository.Insert(user);
-            return true;
+            var res = _userRepository.Insert(user);
+            SendCode(user);
+            return res == 1;
         }
         private string RandomString(int length)
         {

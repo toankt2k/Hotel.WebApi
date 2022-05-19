@@ -9,7 +9,11 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Respository
 {
-    public class RoomRepository:BaseRepository<Room>,IRoomRepository
+    public class RoomRepository : BaseRepository<Room>, IRoomRepository
     {
+        public IEnumerable<Room> GetEmptyRooms()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

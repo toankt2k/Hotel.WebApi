@@ -10,5 +10,6 @@ namespace Hotel.WebApi.core.Interfaces
 {
     public interface IRoomRepository: IBaseRepository<Room>
     {
+        public IEnumerable<Room> GetEmptyRooms();
     }
 }
