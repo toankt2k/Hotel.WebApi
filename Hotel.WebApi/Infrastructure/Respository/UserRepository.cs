@@ -32,7 +32,7 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"SELECT * FROM User WHERE Username = @Username & Active='1'";
+            string sqlCommand = $"SELECT * FROM User WHERE Username = @Username and Active='1'";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
             dynamicParam.Add($"@Username", userName);
