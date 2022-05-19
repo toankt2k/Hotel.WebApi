@@ -13,3 +13,18 @@ C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\
 C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
 C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
 C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\bin\Debug\net6.0\ref\Infrastructure.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\bin\Debug\net6.0\Hotel.WebApi.core.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\bin\Debug\net6.0\Hotel.WebApi.core.pdb
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb

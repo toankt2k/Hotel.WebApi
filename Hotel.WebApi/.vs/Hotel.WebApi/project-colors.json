@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b2cda41e-470c-4b23-8157-365ad448263f": {
+      "ProjectGuid": "b2cda41e-470c-4b23-8157-365ad448263f",
+      "DisplayName": "Hotel.WebApi",
+      "ColorIndex": 0
+    },
+    "84db5ad6-851b-4da2-b10a-2893e9bf6fc5": {
+      "ProjectGuid": "84db5ad6-851b-4da2-b10a-2893e9bf6fc5",
+      "DisplayName": "Hotel.WebApi.core",
+      "ColorIndex": 1
+    },
+    "f6b61d6a-82cc-44cd-95d4-cf715135f27d": {
+      "ProjectGuid": "f6b61d6a-82cc-44cd-95d4-cf715135f27d",
+      "DisplayName": "Infrastructure",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

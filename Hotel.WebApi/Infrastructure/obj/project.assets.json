@@ -94,19 +94,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\toank\\.nuget\\packages\\": {}
+    "C:\\Users\\dinhv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\project\\dotnet-core\\dotnet-core\\Hotel.WebApi\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\html css\\DatPhong\\BackEnd\\Hotel.WebApi\\Hotel.WebApi\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\project\\dotnet-core\\dotnet-core\\Hotel.WebApi\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\toank\\.nuget\\packages\\",
-      "outputPath": "C:\\project\\dotnet-core\\dotnet-core\\Hotel.WebApi\\Infrastructure\\obj\\",
+      "projectPath": "D:\\html css\\DatPhong\\BackEnd\\Hotel.WebApi\\Hotel.WebApi\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\dinhv\\.nuget\\packages\\",
+      "outputPath": "D:\\html css\\DatPhong\\BackEnd\\Hotel.WebApi\\Hotel.WebApi\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\toank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dinhv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -120,8 +120,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\project\\dotnet-core\\dotnet-core\\Hotel.WebApi\\Hotel.WebApi.core\\Hotel.WebApi.core.csproj": {
-              "projectPath": "C:\\project\\dotnet-core\\dotnet-core\\Hotel.WebApi\\Hotel.WebApi.core\\Hotel.WebApi.core.csproj"
+            "D:\\html css\\DatPhong\\BackEnd\\Hotel.WebApi\\Hotel.WebApi\\Hotel.WebApi.core\\Hotel.WebApi.core.csproj": {
+              "projectPath": "D:\\html css\\DatPhong\\BackEnd\\Hotel.WebApi\\Hotel.WebApi\\Hotel.WebApi.core\\Hotel.WebApi.core.csproj"
             }
           }
         }
@@ -160,7 +160,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

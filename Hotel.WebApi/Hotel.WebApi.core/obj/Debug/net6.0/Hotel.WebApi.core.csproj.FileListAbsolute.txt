@@ -10,3 +10,15 @@ C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6
 C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\refint\Hotel.WebApi.core.dll
 C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.pdb
 C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\ref\Hotel.WebApi.core.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\bin\Debug\net6.0\Hotel.WebApi.core.deps.json
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\bin\Debug\net6.0\Hotel.WebApi.core.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\bin\Debug\net6.0\ref\Hotel.WebApi.core.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\bin\Debug\net6.0\Hotel.WebApi.core.pdb
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.csproj.AssemblyReference.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.GeneratedMSBuildEditorConfig.editorconfig
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.AssemblyInfoInputs.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.AssemblyInfo.cs
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.csproj.CoreCompileInputs.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\ref\Hotel.WebApi.core.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi.core\obj\Debug\net6.0\Hotel.WebApi.core.pdb

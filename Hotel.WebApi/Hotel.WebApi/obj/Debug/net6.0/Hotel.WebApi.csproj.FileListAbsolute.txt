@@ -35,3 +35,40 @@ C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\re
 C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.pdb
 C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.genruntimeconfig.cache
 C:\project\dotnet-core\dotnet-core\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\ref\Hotel.WebApi.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\appsettings.Development.json
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\appsettings.json
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Hotel.WebApi.exe
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Hotel.WebApi.deps.json
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Hotel.WebApi.runtimeconfig.json
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Hotel.WebApi.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\ref\Hotel.WebApi.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Hotel.WebApi.pdb
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Dapper.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\MySqlConnector.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Hotel.WebApi.core.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Infrastructure.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Hotel.WebApi.core.pdb
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\bin\Debug\net6.0\Infrastructure.pdb
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.csproj.AssemblyReference.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.AssemblyInfoInputs.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.AssemblyInfo.cs
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.csproj.CoreCompileInputs.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.MvcApplicationPartsAssemblyInfo.cs
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.MvcApplicationPartsAssemblyInfo.cache
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\staticwebassets.build.json
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\staticwebassets.development.json
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\scopedcss\bundle\Hotel.WebApi.styles.css
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.csproj.CopyComplete
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\ref\Hotel.WebApi.dll
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.pdb
+D:\html css\DatPhong\BackEnd\Hotel.WebApi\Hotel.WebApi\Hotel.WebApi\obj\Debug\net6.0\Hotel.WebApi.genruntimeconfig.cache

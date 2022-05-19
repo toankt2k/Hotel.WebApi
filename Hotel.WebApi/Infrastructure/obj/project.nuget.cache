@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3L1XWf+xn0Wa2zweAlYOARCkwS0GqgOCg+8oe7V//KWRZKKj/0c0AbjcuKFX+4lnKJOjUBFDX7afdBq6hm3zQQ==",
+  "dgSpecHash": "bEZS+lNoxcChuZVpLlQfQQaNpGyb1VPrFQEj6xJS0wWXoIGoiMestlSPRmn9wqa1I3ta9UHd7RD9wkl7UIx0tA==",
   "success": true,
-  "projectFilePath": "C:\\project\\dotnet-core\\dotnet-core\\Hotel.WebApi\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\html css\\DatPhong\\BackEnd\\Hotel.WebApi\\Hotel.WebApi\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\toank\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
-    "C:\\Users\\toank\\.nuget\\packages\\mysqlconnector\\2.1.9\\mysqlconnector.2.1.9.nupkg.sha512"
+    "C:\\Users\\dinhv\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\dinhv\\.nuget\\packages\\mysqlconnector\\2.1.9\\mysqlconnector.2.1.9.nupkg.sha512"
   ],
   "logs": []
 }
