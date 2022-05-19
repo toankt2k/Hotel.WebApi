@@ -4,12 +4,13 @@ using Hotel.WebApi.core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Hotel.WebApi.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class RoomsController : CustomBaseController<Room>
     {
         private IRoomService _roomService;

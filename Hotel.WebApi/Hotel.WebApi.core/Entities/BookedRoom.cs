@@ -22,6 +22,9 @@ namespace Hotel.WebApi.core.Entities
 
         public int IsCheckIn { get; set; }
 
+        public Guid? RoomId { get; set; }
+
+        public Guid? ClientId { get; set; }
         [NotMap]
         public Room? Room { get; set; }
 

@@ -12,6 +12,8 @@ namespace Hotel.WebApi.core.Entities
         public string? RoomName { get; set; }
         public string? RoomType { get; set; }
         public string? RoomPrice { get; set; }
+
+        public string? RoomImg { get; set; }
         public string? RoomDescription { get; set; }
     }
 }

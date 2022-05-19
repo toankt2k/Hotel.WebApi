@@ -19,9 +19,9 @@ namespace Infrastructure.Respository
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
             string sqlCommand = $"SELECT * FROM Room AS r " +
-                $"RIGHT Join BookedRoom as b" +
-                $"on r.RoomId = b.RoomId" +
-                $"WHERE b.CheckOut < now()";
+                $"Left Join BookedRoom as b" +
+                $" on r.RoomId = b.RoomId" +
+                $" WHERE b.CheckOut < now()";
             //dữ liệu trả về thông tin của đối tượng
             var data = sqlConnection.Query<Room>(sql: sqlCommand);
             //trả về kết quả
