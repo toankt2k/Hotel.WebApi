@@ -29,7 +29,7 @@ namespace Hotel.WebApi.Controllers
             try
             {
                 var newUser = _userService.Login(user);
-                return Ok(GetToken(user));
+                return Ok(new {Token= GetToken(user)});
             }
             catch (CustomException e)
             {
@@ -49,7 +49,6 @@ namespace Hotel.WebApi.Controllers
                         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                         new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
                         new Claim("username", user.Username),
-                        new Claim("userfullname", user.FullName),
 
                     };
 

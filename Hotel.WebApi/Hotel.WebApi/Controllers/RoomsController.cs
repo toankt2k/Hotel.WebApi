@@ -10,7 +10,7 @@ namespace Hotel.WebApi.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class RoomsController : CustomBaseController<Room>
     {
         private IRoomService _roomService;

@@ -40,12 +40,6 @@ namespace Hotel.WebApi.core.Services
                 errorMsg.Add($"UserNotFound", "Không tìm thấy đối tượng");
                 throw new CustomException("Không tìm thấy đôi tượng cần sửa", errorMsg);
             }
-            //nếu không đúng với mã xác nhận thì lỗi 
-            if (oldEntity.IdentifyCode != user.IdentifyCode)
-            {
-                errorMsg.Add($"NotIdentify", "Mã xác nhận không hợp lệ, vui lòng kiểm tra lại");
-                throw new CustomException("Mã xác thực không đúng", errorMsg);
-            }
             if (errorMsg.Count() > 0)
             {
                 throw new CustomException("Dữ liệu không hợp lệ", errorMsg);
@@ -66,8 +60,7 @@ namespace Hotel.WebApi.core.Services
                     prop.SetValue(user, dataValue);
                 }
             }
-            user.Active = 1;
-            user.IdentifyCode = "";
+            
             // gọi update đến repository
             var result = _userRepository.Identify(user);
             //nếu không đúng với mã xác nhận thì lỗi 
@@ -86,11 +79,11 @@ namespace Hotel.WebApi.core.Services
         public User Login(User user)
         {
             Dictionary<string, string> errorMsg = new Dictionary<string, string>();
-            var emptyCheck = ValidateEmpty(user);
-            if (emptyCheck.Count > 0)
-            {
-                throw new CustomException("Đăng nhập thất bại", emptyCheck);
-            }
+            //var emptyCheck = ValidateEmpty(user);
+            //if (emptyCheck.Count > 0)
+            //{
+            //    throw new CustomException("Đăng nhập thất bại", emptyCheck);
+            //}
             var userOld = _userRepository.CheckUsername(user.Username);
             if(userOld == null)
             {

@@ -16,7 +16,7 @@ namespace Hotel.WebApi.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class UsersController : CustomBaseController<User>
     {
         private IUserService _userService;

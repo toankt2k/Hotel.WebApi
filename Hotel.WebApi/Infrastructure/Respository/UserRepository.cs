@@ -32,7 +32,7 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"SELECT * FROM User WHERE Username = @Username";
+            string sqlCommand = $"SELECT * FROM User WHERE Username = @Username and Active = '1'";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
             dynamicParam.Add($"@Username", userName);
@@ -68,10 +68,12 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"Insert into User (UserId,Password,FullName,Position,Active,Code) values(@UserId,@Password,@FullName,@Position,0,@Code)";
+            string sqlCommand = $"Insert into User (UserId,Username,Password,FullName,Position,Active,Code) values(@UserId,@Username,@Password,@FullName,@Position,0,@Code)";
             //khởi tạo tham số
             user.UserId = Guid.NewGuid();
             var dynamicParam = new DynamicParameters();
+            dynamicParam.Add($"@UserId", user.UserId);
+
             dynamicParam.Add($"@Username", user.Username);
             dynamicParam.Add($"@Code", user.IdentifyCode);
             dynamicParam.Add($"@Password", user.Password);
