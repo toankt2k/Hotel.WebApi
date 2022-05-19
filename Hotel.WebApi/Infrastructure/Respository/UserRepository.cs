@@ -18,10 +18,10 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"SELECT * FROM User WHERE Username = @UserName";
+            string sqlCommand = $"SELECT * FROM User WHERE Username = @Username";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
-            dynamicParam.Add($"@UserName", userName);
+            dynamicParam.Add($"@Username", userName);
             //dữ liệu trả về thông tin của đối tượng
             var data = sqlConnection.Query<User>(sql: sqlCommand, param: dynamicParam).FirstOrDefault();
             //trả về kết quả
@@ -32,7 +32,7 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"SELECT * FROM User WHERE Username = @Username and Active='1'";
+            string sqlCommand = $"SELECT * FROM User WHERE Username = @Username";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
             dynamicParam.Add($"@Username", userName);
@@ -47,10 +47,11 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"Update User set Code = '', Active='1' WHERE Username = @Username";
+            string sqlCommand = $"Update User set Code = '', Active='1' WHERE Username = @Username and Code=@Code;";
             //khởi tạo tham số
             var dynamicParam = new DynamicParameters();
             dynamicParam.Add($"@Username", user.Username);
+            dynamicParam.Add($"@Code", user.IdentifyCode);
             //dữ liệu trả về thông tin của đối tượng
             var data = sqlConnection.Execute(sql: sqlCommand, param: dynamicParam);
             //trả về kết quả
@@ -66,6 +67,8 @@ namespace Infrastructure.Respository
         {
             throw new NotImplementedException();
         }
+
+
 
     }
 }

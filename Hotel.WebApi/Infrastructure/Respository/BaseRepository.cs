@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Hotel.WebApi.core.Entities;
 using MISA.Web02.Core.Interfaces.Base;
 using MySqlConnector;
 using System;

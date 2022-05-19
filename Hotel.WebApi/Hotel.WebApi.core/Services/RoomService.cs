@@ -12,8 +12,16 @@ namespace Hotel.WebApi.core.Services
 {
     public class RoomService : BaseService<Room>, IRoomService
     {
+        IRoomRepository _roomRepository;
         public RoomService(IRoomRepository roomRepository) : base(roomRepository)
         {
+            _roomRepository = roomRepository;
+        }
+
+        public IEnumerable<Room> GetEmptyRooms()
+        {
+            var res = _roomRepository.GetEmptyRooms();
+            return res;
         }
     }
 }
