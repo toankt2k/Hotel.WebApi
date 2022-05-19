@@ -23,5 +23,7 @@ namespace Hotel.WebApi.core.Services
             var res = _roomRepository.GetEmptyRooms();
             return res;
         }
+
+
     }
 }

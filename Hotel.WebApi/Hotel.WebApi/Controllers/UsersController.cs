@@ -27,7 +27,6 @@ namespace Hotel.WebApi.Controllers
             _userService = userService;
             _configuration = config;
         }
-        [AllowAnonymous]
         [HttpPost("register")]
         public IActionResult Register([FromBody] User user)
         {

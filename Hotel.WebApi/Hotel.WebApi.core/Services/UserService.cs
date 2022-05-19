@@ -125,6 +125,7 @@ namespace Hotel.WebApi.core.Services
         {
             String to = user.Email;
             String from = "toankt2k@gmail.com";
+            String password = "0973590850";
             MailMessage message = new MailMessage(from, to);
             message.Subject = "Mã xác thực tài khoản";
             message.Body = $"<p>Kính chào: {user.FullName}!</p>" +
@@ -145,7 +146,7 @@ namespace Hotel.WebApi.core.Services
             using (SmtpClient client = new SmtpClient("smtp.gmail.com"))
             {
                 client.Port = 587;
-                client.Credentials = new NetworkCredential(from, "0973590850");
+                client.Credentials = new NetworkCredential(from, password);
                 client.EnableSsl = true;
                 return await SendMail(from, to, message.Subject, message.Body, client);
             }
