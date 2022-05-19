@@ -52,7 +52,7 @@ namespace Hotel.WebApi.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-        [HttpPost(" ")]
+        [HttpPost("identify")]
         public IActionResult Identify([FromBody] User user)
         {
             try
