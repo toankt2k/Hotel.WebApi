@@ -68,11 +68,15 @@ namespace Infrastructure.Respository
             //khởi tạo kết nối
             var sqlConnection = new MySqlConnection(_sqlConnectionString);
             //lấy dữ liệu
-            string sqlCommand = $"Update User set Code = @Code, Active = '0' WHERE Username = @Username;";
+            string sqlCommand = $"Insert into User (UserId,Password,FullName,Position,Active,Code) values(@UserId,@Password,@FullName,@Position,0,@Code)";
             //khởi tạo tham số
+            user.UserId = Guid.NewGuid();
             var dynamicParam = new DynamicParameters();
             dynamicParam.Add($"@Username", user.Username);
             dynamicParam.Add($"@Code", user.IdentifyCode);
+            dynamicParam.Add($"@Password", user.Password);
+            dynamicParam.Add($"@FullName", user.FullName);
+            dynamicParam.Add($"@Position", user.Position);
             //dữ liệu trả về thông tin của đối tượng
             var data = sqlConnection.Execute(sql: sqlCommand, param: dynamicParam);
             //trả về kết quả
