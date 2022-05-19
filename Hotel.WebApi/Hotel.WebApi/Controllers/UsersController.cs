@@ -27,7 +27,7 @@ namespace Hotel.WebApi.Controllers
             _userService = userService;
             _configuration = config;
         }
-        
+        [AllowAnonymous]
         [HttpPost("register")]
         public IActionResult Register([FromBody] User user)
         {
@@ -45,9 +45,6 @@ namespace Hotel.WebApi.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-
-        
-        
 
     }
 }

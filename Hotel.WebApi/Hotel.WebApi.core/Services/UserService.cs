@@ -70,6 +70,16 @@ namespace Hotel.WebApi.core.Services
             user.IdentifyCode = "";
             // gọi update đến repository
             var result = _userRepository.Identify(user);
+            //nếu không đúng với mã xác nhận thì lỗi 
+            if (result == 0)
+            {
+                errorMsg.Add($"NotIdentify", "Mã xác nhận không hợp lệ, vui lòng kiểm tra lại");
+                throw new CustomException("Mã xác thực không đúng", errorMsg);
+            }
+            if (errorMsg.Count() > 0)
+            {
+                throw new CustomException("Dữ liệu không hợp lệ", errorMsg);
+            }
             return result == 1;
         }
 

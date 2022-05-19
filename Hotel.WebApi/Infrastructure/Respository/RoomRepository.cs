@@ -1,6 +1,8 @@
-﻿using Hotel.WebApi.core.Entities;
+﻿using Dapper;
+using Hotel.WebApi.core.Entities;
 using Hotel.WebApi.core.Interfaces;
 using MISA.Infrastructure.Respository;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +15,17 @@ namespace Infrastructure.Respository
     {
         public IEnumerable<Room> GetEmptyRooms()
         {
-            throw new NotImplementedException();
+            //khởi tạo kết nối
+            var sqlConnection = new MySqlConnection(_sqlConnectionString);
+            //lấy dữ liệu
+            string sqlCommand = $"SELECT * FROM Room AS r " +
+                $"RIGHT Join BookedRoom as b" +
+                $"on r.RoomId = b.RoomId" +
+                $"WHERE b.CheckOut < now()";
+            //dữ liệu trả về thông tin của đối tượng
+            var data = sqlConnection.Query<Room>(sql: sqlCommand);
+            //trả về kết quả
+            return data;
         }
     }
 }
